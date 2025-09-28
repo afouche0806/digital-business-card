@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoting App</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1>Quoting Application</h1>
+
+            <div class="customer-info">
+                <div class="form-group">
+                    <label for="customer-name">Customer Name</label>
+                    <input type="text" id="customer-name" placeholder="e.g., Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" placeholder="e.g., Website Redesign">
+                </div>
+            </div>
+
+            <div class="quote-items-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="quote-items-body">
+                        <!-- Line items will be added here by JavaScript -->
+                    </tbody>
+                </table>
+                <button id="add-item-btn" class="cta-button">Add Line Item</button>
+            </div>
+
+            <div class="quote-summary">
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="subtotal-amount">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax (%)</span>
+                    <input type="number" id="tax-rate" value="0" min="0" step="1">
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span id="total-amount">$0.00</span>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button id="save-quote-btn" class="cta-button">Save Quote</button>
+                <button id="print-quote-btn" class="cta-button">Printable Quote</button>
+                <a href="../index.html" class="cta-button">Back to Card</a>
+            </div>
+        </div>
+        
+        <div class="card-body" id="saved-quotes-section">
+             <h2>Saved Quotes</h2>
+             <div id="saved-quotes-list">
+                <!-- Saved quotes will be listed here -->
+             </div>
+        </div>
+    </div>
+
+    <script src="quote.js"></script>
+</body>
+</html>

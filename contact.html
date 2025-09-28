@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1>Contact Me</h1>
+            <p>Fill out the form below to get in touch. Clicking "Submit" will open your default email application.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Your Email</label>
+                    <input type="email" id="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+        <div class="card-footer">
+            <a href="index.html" class="cta-button">Back to Card</a>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Your Business Card</title>
+    <link rel=\"stylesheet\" href=\"style.css?v=
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1>Setup Your Card</h1>
+            <form id="setup-form">
+                <div class="form-group">
+                    <label for="companyLogo">Company Logo</label>
+                    <input type="file" id="companyLogo" accept="image/*">
+                    <img id="companyLogoPreview" src="" alt="Company Logo Preview" style="max-width: 100px; max-height: 100px; display: none; margin-top: 10px;">
+                </div>
+                <div class="form-group">
+                    <label for="profilePic">Profile Picture</label>
+                    <input type="file" id="profilePic" accept="image/*">
+                    <img id="profilePicPreview" src="" alt="Profile Picture Preview" style="max-width: 100px; max-height: 100px; display: none; margin-top: 10px;">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name / Company Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="description">About Me / Services Description</label>
+                    <textarea id="description" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Social Media Links</label>
+                    <div id="social-links-container">
+                        <!-- Dynamic social link fields will be added here -->
+                    </div>
+                    <button type="button" id="add-social-link" class="secondary-button">Add Social Link</button>
+                </div>
+
+                                <div class="form-group">
+                                    <label for="theme-select">Color Theme</label>
+                                    <select id="theme-select">
+                                        <option value="default">Default</option>
+                                        <option value="theme-dark">Dark</option>
+                                        <option value="theme-ocean">Ocean</option>
+                                    </select>
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="layout-select">Card Layout</label>
+                                    <select id="layout-select">
+                                        <option value="default">Default (Single Column)</option>
+                                        <option value="side-by-side">Side-by-Side</option>
+                                    </select>
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="primary-color">Primary Color</label>
+                                    <input type="color" id="primary-color">
+                                </div>                <button type="submit" class="cta-button">Save</button>
+            </form>
+            <p class="message" id="message"></p>
+        </div>
+    </div>
+    <script src=\"setup.js?v=
+</body>
+</html>

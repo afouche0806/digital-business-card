@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div id="job-details" style="display: none;">
+                <h1 id="job-title"></h1>
+                <div class="job-card-body">
+                    <p><strong>Current Status:</strong> <span id="job-status"></span></p>
+                    <p><strong>Description:</strong> <span id="job-description"></span></p>
+                    <p id="job-address"></p>
+                </div>
+                <div class="job-card-footer">
+                    <small id="job-date"></small>
+                </div>
+            </div>
+            <div id="error-container" class="error-message" style="display: none;">
+                <!-- Error messages will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="job-status.js"></script>
+</body>
+</html>
